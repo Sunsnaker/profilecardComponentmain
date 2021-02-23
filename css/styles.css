@@ -1,0 +1,125 @@
+:root {
+	/* Colores */
+	--Dark-cyan: hsl(185, 75%, 39%);
+	--Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+	--Dark-grayish-blue: hsl(227, 10%, 46%);
+	--Dark-gray: hsl(0, 0%, 59%);
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+/* Tipografía */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body {
+	background-image: url('../assets/images/bg-pattern-top.svg'), url('../assets/images/bg-pattern-bottom.svg');
+	background-repeat: no-repeat, no-repeat;
+	background-position: right 50vw bottom 35vh, left 50vw top 50vh;
+	background-color: var(--Dark-cyan);
+	margin: 0;
+	font-family: 'Kumbh Sans', sans-serif;
+}
+
+@media screen and (max-width: 375px) {
+	body {
+		background-position: right 30vw bottom 50vh, left 40vw top 43vh;
+	}
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 100vw;
+	min-height: 100vh;
+}
+
+.card {
+	background-color: #fff;
+	border-radius: 20px;
+	box-shadow: 0 10px 20px 0 rgba(19, 19, 19, 0.219);
+	width: 320px;
+	overflow: hidden;
+}
+
+.card-header__img {
+	width: 100%;
+	display: block;
+}
+
+.card-body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-bottom: 1px solid var(--Dark-gray);
+}
+
+.card-body__img {
+	border: 5px solid #fff;
+	border-radius: 50%;
+	margin-top: calc(-48px - 5px);
+	background-color: #fff;
+}
+
+.card-body__title {
+	color: var(--Very-dark-desaturated-blue);
+	font-size: 1.8rem;
+}
+
+.card-body__span {
+	color: var(--Dark-grayish-blue);
+	font-weight: 400;
+	margin-left: 1rem;
+}
+
+.card-body__text {
+	color: var(--Dark-grayish-blue);
+	margin-top: 0;
+	font-size: 1.6rem;
+}
+
+.card-footer {
+	border-top: 1px solid var(--Dark-gray);
+	display: flex;
+	justify-content: space-around;
+}
+
+.card-footer__social {
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+.card-footer__title {
+	color: var(--Very-dark-desaturated-blue);
+	font-size: 1.8rem;
+	margin-top: 2rem;
+}
+
+.card-footer__text {
+	color: var(--Dark-grayish-blue);
+	margin-top: -1rem;
+	margin-bottom: 2rem;
+}
+
+.footer {
+	position: relative;
+	top: -5rem;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
