@@ -27,6 +27,7 @@ body {
 	background-color: var(--Dark-cyan);
 	margin: 0;
 	font-family: 'Kumbh Sans', sans-serif;
+	overflow: hidden;
 }
 
 @media screen and (max-width: 375px) {
